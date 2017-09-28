@@ -1,0 +1,33 @@
+﻿@model Dpay.Client.Web.Models.CardResultModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Delete Card Result</title>
+</head>
+<body>
+    <div>
+        <p>Success: @Model.Success</p>
+        <p>MessageCode: @Model.MessageCode</p>
+        <p>Message: @Model.Message</p>
+        <p>UserMessage: @Model.UserMessage</p>
+        @foreach(var merchantCardDto in Model.MerchantCardDtos)
+        {
+            <p>------Merchant Card-------</p>
+            <p>Id: @merchantCardDto.Id</p>
+            <p>MaskedCardNumber: @merchantCardDto.MaskedCardNumber</p>
+            <p>FullName: @merchantCardDto.FullName</p>
+            <p>MerchantCardUserId: @merchantCardDto.MerchantCardUserId</p>
+            <p>MerchantUserId: @merchantCardDto.MerchantUserId</p>
+            <p>Email: @merchantCardDto.Email</p>
+            <p>ReferenceId1: @merchantCardDto.ReferenceId1</p>
+            <p>--------------------------</p>
+        }
+    </div>
+</body>
+</html>

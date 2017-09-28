@@ -1,0 +1,28 @@
+﻿@model Dpay.Client.Web.Models.CardResultModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Save Card Result</title>
+</head>
+<body>
+    <div>
+        <p>Success: @Model.Success</p>
+        <p>MessageCode: @Model.MessageCode</p>
+        <p>Message: @Model.Message</p>
+        <p>UserMessage: @Model.UserMessage</p>
+        <p>Id: @Model.Id</p>
+        <p>MaskedCardNumber: @Model.MaskedCardNumber</p>
+        <p>FullName: @Model.FullName</p>
+        <p>MerchantCardUserId: @Model.MerchantCardUserId</p>
+        <p>MerchantUserId: @Model.MerchantUserId</p>
+        <p>Email: @Model.Email</p>
+        <p>ReferenceId1: @Model.ReferenceId1</p>
+    </div>
+</body>
+</html>

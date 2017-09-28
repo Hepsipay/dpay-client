@@ -1,0 +1,29 @@
+﻿@model Dpay.Client.Web.Models.CommonPaymentResultModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Common Payment Query Result</title>
+</head>
+<body>
+    <div>
+        <p>Success: @Model.Success</p>
+        <p>MessageCode: @Model.MessageCode</p>
+        <p>Message: @Model.Message</p>
+        <p>UserMessage: @Model.UserMessage</p>
+        <p>Amount: @Model.Amount</p>
+        <p>TransactionId: @Model.TransactionId</p>
+        <p>Currency: @Model.Currency</p>
+        <p>Installment: @Model.Installment</p>
+        <p>TransactionTime: @Model.TransactionTime</p>
+        <p>CommonPaymentUniqueId: @Model.CommonPaymentUniqueId</p>
+        <p>PaymentTransactionReponseMessage: @Model.PaymentTransactionReponseMessage</p>
+        <p>PaymentTransactionResponseCode: @Model.PaymentTransactionResponseCode</p>
+    </div>
+</body>
+</html>

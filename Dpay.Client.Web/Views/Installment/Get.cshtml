@@ -1,0 +1,32 @@
+﻿@model Dpay.Client.Web.Models.InstallmentResultModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Get Installment Result</title>
+</head>
+<body>
+    <div>
+        <p>Success: @Model.Success</p>
+        <p>MessageCode: @Model.MessageCode</p>
+        <p>Message: @Model.Message</p>
+        <p>UserMessage: @Model.UserMessage</p>
+        @foreach(var installmentDto in Model.InstallmentDtos)
+        {
+            <p>------Merchant Installment-------</p>
+            <p>Amount: @installmentDto.Amount</p>
+            <p>CalculatedAmount: @installmentDto.CalculatedAmount</p>
+            <p>BankId: @installmentDto.BankId</p>
+            <p>BankName: @installmentDto.BankName</p>
+            <p>Installment: @installmentDto.Installment</p>
+            <p>Commission: @installmentDto.Commission</p>
+            <p>--------------------------</p>
+        }
+    </div>
+</body>
+</html>

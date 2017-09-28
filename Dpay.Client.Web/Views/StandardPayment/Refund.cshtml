@@ -1,0 +1,27 @@
+﻿@model Dpay.Client.Web.Models.ResultModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Refund Result</title>
+</head>
+<body>
+    <div>
+        <p>Success: @Model.Success</p>
+        <p>MessageCode: @Model.MessageCode</p>
+        <p>Message: @Model.Message</p>
+        <p>UserMessage: @Model.UserMessage</p>
+        <p>Amount: @Model.Amount</p>
+        <p>TransactionId: @Model.TransactionId</p>
+        <p>Currency: @Model.Currency</p>
+        <p>TransactionTime: @Model.TransactionTime</p>
+        <p>BankResponseCode: @Model.BankResponseCode</p>
+        <p>BankResponseMessage: @Model.BankResponseMessage</p>
+    </div>
+</body>
+</html>
