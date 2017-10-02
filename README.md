@@ -8,7 +8,7 @@ https://ci.appveyor.com/project/Hepsipay/dpay-client
 
 #### Request
 
-```.net
+```c#
 var paymentRequest = new PaymentRequest
 {
 	Version = "1.0",
@@ -94,7 +94,7 @@ var paymentResponse = _paymentProcessor.Pay(paymentRequest, apiUrl, "123");
 ```
 
 #### Response
-```.net
+```c#
 { 
   "Amount": 12300,
   "TransactionType": 0, 
@@ -116,7 +116,7 @@ var paymentResponse = _paymentProcessor.Pay(paymentRequest, apiUrl, "123");
 
 #### Request
 
-```.net
+```c#
 
 public ActionResult Sale()
 {
@@ -214,7 +214,7 @@ public ActionResult Sale()
 ```
 
 #### Response
-```.net
+```c#
 { 
   "Amount": 12300,
   "TransactionType": 0, 
@@ -236,7 +236,7 @@ public ActionResult Sale()
 
 #### Request
 
-```.net
+```c#
 
 var request = new RefundRequest
 {
@@ -276,7 +276,7 @@ var response = _paymentProcessor.Refund(request, apiUrl, "123");
 ```
 
 #### Response
-```.net
+```c#
 
 {
   "ApiKey": "1ca71cb09c7f4a2188fbddfa90efb481",  
