@@ -1,6 +1,6 @@
 # dpay-dotnet
 
-https://ci.appveyor.com/project/Hepsipay/dpay-client
+https://ci.appveyor.com/api/projects/status/github/Hepsipay/dpay-client?branch=master&svg=true
 
 # Kullanım
 
