@@ -8,7 +8,7 @@
 
 #### Request
 
-```c#
+```C#
 var paymentRequest = new PaymentRequest
 {
 	Version = "1.0",
@@ -94,7 +94,7 @@ var paymentResponse = _paymentProcessor.Pay(paymentRequest, apiUrl, "123");
 ```
 
 #### Response
-```c#
+```JSON
 { 
   "Amount": 12300,
   "TransactionType": 0, 
@@ -116,7 +116,7 @@ var paymentResponse = _paymentProcessor.Pay(paymentRequest, apiUrl, "123");
 
 #### Request
 
-```c#
+```C#
 
 public ActionResult Sale()
 {
@@ -214,7 +214,7 @@ public ActionResult Sale()
 ```
 
 #### Response
-```c#
+```JSON
 { 
   "Amount": 12300,
   "TransactionType": 0, 
@@ -236,7 +236,7 @@ public ActionResult Sale()
 
 #### Request
 
-```c#
+```C#
 
 var request = new RefundRequest
 {
@@ -276,20 +276,20 @@ var response = _paymentProcessor.Refund(request, apiUrl, "123");
 ```
 
 #### Response
-```c#
+```JSON
 
 {
   "ApiKey": "1ca71cb09c7f4a2188fbddfa90efb481",  
   "TransactionId": " tx_123456789",  
-	  "ReferenceTransactionId": "tx_12345678",  
+  "ReferenceTransactionId": "tx_12345678",  
   "TransactionTime": "1447752023",  
   "Signature": "8480954d54d94e5f272c53caa69efdcb0b678e837d3997eec42c4dbfa636cdde",  
   "Currency": "TRY", 
-	  "amount": 100,  
+  "amount": 100,  
   "MessageCode": "0000",  
-	  "Message": "Başarılı",
-	  "UserMessage": "İşleminiz başarıyla gerçekleştirildi"  
-	}  
+  "Message": "Başarılı",
+  "UserMessage": "İşleminiz başarıyla gerçekleştirildi"  
+}  
 
 ```
 
